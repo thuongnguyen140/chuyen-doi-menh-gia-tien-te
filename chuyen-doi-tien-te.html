@@ -28,7 +28,7 @@
             <option value="yen">Yên Nhật</option>
         </select>
         <button type="button" onclick="convert">Convert</button>
-        <p id="Result">Result: </p>
+        <span id="Result">Result: </span>
     </form>
 </body>
 <script>
@@ -36,7 +36,7 @@
         let dolamy = 23010
         let ketquatigia = Number(tigiadolamy * dolamy)
         let tigiadolamy = Number(document.getElementById("sotien").value)
-        document.getElementById("tigiadolamy").innerHTML = tigiadolamy
+        document.getElementById("Result").innerHTML = tigiadolamy
     }
 </script>
 
