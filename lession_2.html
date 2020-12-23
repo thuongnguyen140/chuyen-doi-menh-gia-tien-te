@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" src="./convert.js"></script>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<td style="width: 200px;">Amount</td>
+				<td style="width: 150px;">From Currency</td>
+				<td style="width: 150px;">To Currency</td>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="number" id="valAmount"></td>
+				<td>
+					<select id="slFromCurr">
+						<option value="VND" selected>VND</option>
+						<option value="AUD">AUD</option>
+						<option value="USD">USD</option>
+						<option value="EUR">EUR</option>
+						<option value="CAD">CAD</option>
+					</select>
+				</td>
+				<td>
+					<select id="slToCurr">
+						<option value="VND">VND</option>
+						<option value="AUD">AUD</option>
+						<option value="USD" selected>USD</option>
+						<option value="EUR">EUR</option>
+						<option value="CAD">CAD</option>
+					</select>
+				</td>
+				<td><button id="btnConvert" onclick="convert();"">Convert</button></td>
+			</tr>
+			<tr>
+				<td spancol="4">
+					<label>Result: </label><label id="result"></label>
+				</td>
+			</tr>
+		</tbody>
+	</table>    
+</body>
+</html>
