@@ -14,8 +14,8 @@
         <input type="number" id="sotien">
         <label for="fromcurrency">From Currency</label>
         <select id="fromcurrency">
-            <option value="vietnamdong" selected>Việt Nam Đồng</option>
-            <option value="usd">Đô La Mỹ</option>
+            <option value="vietnamdong" id="vnd" selected>Việt Nam Đồng</option>
+            <option value="usd" id="dlm">Đô La Mỹ</option>
             <option value="EURO">Bảng Anh</option>
             <option value="yen">Yên Nhật</option>
         </select>
@@ -23,7 +23,7 @@
         <label for="tocurrency">To Currency</label>
         <select id="tocurrency">
             <option value="vietnamdong">Việt Nam Đồng</option>
-            <option value="usd" selected>Đô La Mỹ</option>
+            <option value="usd" id="dlm2" selected>Đô La Mỹ</option>
             <option value="EURO">Bảng Anh</option>
             <option value="yen">Yên Nhật</option>
         </select>
@@ -33,11 +33,23 @@
 </body>
 <script>
     function convert() {
-        let dolamy = 23010
-        let ketquatigia = Number(tigiadolamy * dolamy)
-        let tigiadolamy = Number(document.getElementById("sotien").value)
-        document.getElementById("Result").innerHTML = tigiadolamy
+        if ("fromcurrency" = "vnd")
+            alert(ketquatigia)
     }
+        else {
+        alert("meowmeow")
+    }
+
+
+
+
+
+
+    /*   let dolamy = 23010
+       let tigiadolamy = Number(document.getElementById("sotien").value)
+       let ketquatigia = Number(tigiadolamy * dolamy)
+       document.getElementById("Result").innerHTML = ketquatigia
+   }*/
 </script>
 
 </html>
